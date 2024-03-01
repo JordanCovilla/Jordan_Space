@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Space</title>
+</head>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button id="DB" onclick="joker();">Joker</button>
+
+    <h1 id="titulo">Jordan Space</h1>
+
+    <h2>Cambio de aceite (Cada 2.500 KM)</h2>
+    <div id="kmSQL" style="display: none;"><?php echo $nombreUsuario; ?></div>
+                <p class="cambioAceite" id="ActualKMHTML"></p>
+                <p class="cambioAceite" id="kilometrajeAnteriorHTML"></p>
+                <p class="cambioAceite" id="DiferenciaKMHTML"></p>
+                <p class="cambioAceite" id="SiguienteCambioAceiteHTMLID"></p>
+                <br>
+                <!--Inicio de Objeto 1-->
+                <p>Ingrese kilometraje de este cambio de aceite:</p>
+                <input type="number" id="kmCambioDeAceite" class="container__input">
+                <div class="chute container__botones">
+                    <button id ="botonAccion1" onclick="LlamadaMaster();" class="container__boton">Acción</button>
+                </div>
+                <br><br><br>
+                <!--Fin objeto 1-->
+                <p>Objeto 2</p>
+                <input type="text" id="valorUsuario" min="1" max="10" class="container__input">
+                <div class="chute container__botones">
+                    <button onclick="LlamadaMaster();" class="container__boton">Acción</button>
+                    <button class="container__boton" id="reiniciar" disabled>Reset</button>
+                </div>
+                
+
+                <?php
+                // Aquí puedes poner tu código PHP
+                $nombre = "Juan";
+                echo "<p>Hola, $nombre. Este es un ejemplo de PHP en HTML.</p>";
+                ?>
+
+                
+                <script src="app.js"></script>
+</body>
+</html>
